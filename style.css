@@ -37,12 +37,13 @@
 body{
     position: relative;
     overflow-x: hidden;
-    background-color: var(--black);
     font-family: 'GeneralSans';
+    background-color: var(--lightblue);
 
     & .element{
         position: absolute;
         left: 50%;
+        width: 100%;
         transform: translateX(-50%);
     }
 
@@ -54,9 +55,19 @@ body{
             width: 100%;
         }
 
-        /* & .bck01{
-
-        } */
+        & .bck01{
+            position: relative;
+            height: 832px;
+            
+            & img{
+                position: absolute;
+                width: 100%;
+                min-height: 832px;
+                object-fit: cover;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
 
         & .bck02{
             height: 600px;
@@ -70,7 +81,7 @@ body{
 
         & .bck04{
             height: 300px;
-            background-color: var(--darkblue);
+            background-color: var(--lightblue);
         }
 
         & .bck05{
@@ -96,7 +107,7 @@ body{
 
         & .bck07{
             height: 320px;
-            background-color: var(--darkblue);
+            background-color: var(--lightblue);
         }
     }
 
@@ -224,6 +235,14 @@ body{
                     transform-origin: top;
                 }
             }
+        }
+
+        & .welcome-reviews{
+            font-size: 24px;
+            font-weight: 450;
+            color: var(--white);
+            margin-left: 108px;
+            margin-top: 148px;
         }
     }
 
@@ -454,7 +473,7 @@ body{
             height: 100px;
             background-color: var(--white);
             border-radius: 50px;
-            border: 12px solid var(--darkblue);
+            border: 12px solid var(--lightblue);
             right: 7.5%;
             top: 454px;
             transition: .3s;
@@ -512,44 +531,57 @@ body{
             }
         }
 
-        & .review-box{
+        & .review-row{
             position: relative;
-            margin: 0 108px;
+            margin: 18px 96px;
+            width: 1262px;
 
-            & h1{
-                position: absolute;
-                font-size: 256px;
-                font-weight: 500;
-                line-height: 1;
-                color: var(--darkblue);
-                right: 0;
-                top: -120px;
-            }
+            & .review-card{
+                display: inline-table;
+                margin: 12px;
+                width: 288px;
+                height: 288px;
+                background-color: var(--lightblue);
 
-            & .reviews{
-                position: absolute;
-                width: 100%;
-                max-width: 720px;
-                left: 50%;
-                transform: translateX(-50%);
-                margin-top: 43px;
-                padding: 23px;
+                & .reviews-google{
+                    position: relative;
+                    height: 62px;
+                    padding: 0 20px;
 
-                & p{
-                    color: var(--darkblue);
+                    & .review-googlelogo{
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+                    & .review-stars{
+                        position: absolute;
+                        height: 100%;
+                        margin-left: 38px;
+
+                        & img{
+                            position: relative;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
                 }
 
-                & .review-content{
-                    font-size: 25px;
-                    font-style: italic;
-                    font-weight: 400;
+                & .review-name{
+                    font-size: 28px;
+                    font-weight: 550;
+                    color: var(--white);
+                    margin-left: 20px;
+                    line-height: 1;
+                    margin-bottom: 8px;
                 }
 
-                & .review-signature{
-                    font-size: 21px;
-                    margin-top: 12px;
-                    text-align: right;
-                    font-weight: 500;
+                & .review-paragraph{
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: var(--white);
+                    width: 100%;
+                    padding: 0 20px;
                 }
             }
         }
@@ -687,7 +719,7 @@ body{
 
         & .contacts{
             position: relative;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 400;
             line-height: 2.5;
             color: var(--white);
@@ -695,7 +727,7 @@ body{
             
             & img{
                 position: absolute;
-                top: 8px;
+                top: 10px;
                 left: -34px;
             }
         }
