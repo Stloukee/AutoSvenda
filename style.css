@@ -363,7 +363,7 @@ body{
     & .info-section{
         width: 100%;
         max-width: 1440px;
-        top: 1514px;
+        top: 1554px;
 
         & .bckgrnd-main{
             z-index: -1;
@@ -510,7 +510,7 @@ body{
     & .review-section{
         width: 100%;
         max-width: 1440px;
-        top: 2132px;
+        top: 2172px;
 
         & .review-heading{
             margin: 35px 108px 0;
@@ -543,12 +543,12 @@ body{
                 height: 288px;
                 background-color: var(--lightblue);
 
-                & .reviews-google{
+                & .reviews-maps{
                     position: relative;
                     height: 62px;
                     padding: 0 20px;
 
-                    & .review-googlelogo{
+                    & .review-mapslogo{
                         position: absolute;
                         top: 50%;
                         transform: translateY(-50%);
@@ -590,7 +590,7 @@ body{
     & .map-section{
         width: 100%;
         max-width: 1440px;
-        top: 2692px;
+        top: 2712px;
         height: 0;
 
         & .howdoyougetthere{
@@ -706,7 +706,7 @@ body{
     & .footer{
         width: 100%;
         max-width: 1440px;
-        top: 3012px;
+        top: 3042px;
         padding: 0 108px;
         margin: 51px 0;
 
